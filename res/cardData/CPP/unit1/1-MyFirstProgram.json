@@ -1,0 +1,9 @@
+{
+    "title": "Mi Primer Programa en C++",
+    "description": "Este es mi primer programa en C++",
+    "codeurl": "https://github.com/example",
+    "notes": [
+        "Para compilar usamos el comando g++: g++ code.cpp -o outputfile",
+        "La instrucción cout not permite imprimir un mensaje por pantalla"
+    ]
+}
