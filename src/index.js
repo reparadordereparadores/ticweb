@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
+
 import './index.css';
 import App from './App';
+import Card from './components/card';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+
+    <div>
+      <Route exact path="/"> {/* exact indica que la dirección debe ser igual, si no tambien se mostraría en cualquier otro "subdominio" */}
+        <Card />
+      </Route>
+    </div>
+
+  </Router>,
   document.getElementById('root')
 );
 

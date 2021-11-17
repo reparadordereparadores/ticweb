@@ -7,13 +7,14 @@ class Card extends Component{
     }
 
     render(){
-        <div className="container">
+        return(
+            <div className="container">
 
             <div className="card">
 
                 <div className="card-header">
-                    <h5 className="card-title">My first program in C++</h5>
-                    <p>Primer programa en C++ con la estructura principal</p>
+                    <h5 className="card-title">{this.props.title}</h5>
+                    <p>{this.props.description}</p>
                 </div>
 
                 <ul className="list-group list-group-flush">
@@ -39,6 +40,7 @@ class Card extends Component{
             </div>
 
         </div>
+        )
     }
 }
 
